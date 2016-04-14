@@ -1,0 +1,112 @@
+/*page background*/
+#title {
+  color:white;
+  font-family: Lobster, Monospace;
+  display:block;
+  text-align:center;
+  font-size:50px;
+}
+body {
+    background-image:url("http://www.turimpic.com/wp-content/uploads/2015/12/blue-background-4805-cool-background.jpg");
+  background-color:#3f1547;
+}
+/* Calculator main body*/
+#calculator {
+  width:480px;
+  height:auto;
+  border-radius:3px;
+  margin: 200px auto;
+  padding: 20px;
+  background-color:#cf7dde;
+  box-shadow: 5px 10px rgba(0,0,0,0.2);
+}
+.keys, .top {
+  overflow:hidden;
+}
+/****all keys on the calculator**********/
+.keys span, .top span {
+  float:left;
+  position:relative;
+  /*why does this add smoothness?*/
+  top: 0px;
+  background-color:white;
+  color:#3f1547;
+  width:100px;
+  height:40px;
+  font:bold 30px Bitter, Monospace;
+
+  margin:5px;
+  box-shadow: 0px 4px rgba(0,0,0,0.2);
+  border-radius:3px;
+  line-height:40px;
+  text-align:center;
+  user-select:none;
+  cursor:pointer;
+  transition:all 0.2s ease 0s;
+}
+/*Calculator screen*/
+.screen {
+  width:325px;
+  height:40px;
+  float:right;
+  margin-top: 5px;
+  padding:0px;
+  background: rgba(0, 0, 0, 0.2);
+
+  color:white;
+  font:bold 25px Bitter, Monospace;
+  text-align:right;
+  line-height:45px;
+  letter-spacing:3px;
+  border-radius: 3px;
+  box-shadow: inset 1px 4px rgba(0, 0, 0, 0.2);
+}
+/*number keys color customization*/
+.keys span:hover {
+  background-color:#2e8ba3;
+  box-shadow: 0px 4px #194752;
+}
+.keys span:active {
+  box-shadow: 0px 0px rgba(0,0,0,0);
+  top:4px;
+}
+/* Clear button color customization*/
+#clear {
+  background:#a84da3;
+  color:white;
+}
+#clear:hover {
+  background-color:#662e63;
+  box-shadow: 0px 4px #2d152c;
+}
+#clear:active {
+  top:4px;
+  box-shadow:0px 0px #662e63;
+}
+/*operator key color customization */
+/*question: why can't i just say ".operator" ?*/
+.keys .operator {
+  background-color: #a2d879;
+  font-size:40px;
+  color:#a03132;
+}
+.keys .operator:hover {
+  background-color: #558c2b;
+  box-shadow: 0px 4px #2b4516;
+}
+.keys .operator:active {
+  box-shadow: 0px 0px rgba(0,0,0,0);
+  top:4px;
+}
+/* '=' key color customization*/
+.keys .equal {
+  background: #d8797f;
+}
+.keys .equal:hover {
+  background: #872c31;
+  box-shadow: 0px 4px #44171a;
+}
+.keys .equal:active {
+  box-shadow: 0px 0px rgba(0,0,0,0);
+  top:4px;
+}
